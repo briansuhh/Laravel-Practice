@@ -11,3 +11,5 @@ Route::get('/user', function (Request $request) {
 
 Route::apiResource('v1/items', ItemApiController::class);
 Route::apiResource('v2/attendance', StudentApiController::class);
+Route::apiResource('v2/students', StudentApiController::class);
+Route::post('/students', [StudentApiController::class, 'store']);

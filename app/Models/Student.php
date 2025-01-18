@@ -9,5 +9,5 @@ class Student extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['rfid_tag'];
+    protected $fillable = ['rfid_card'];
 }
